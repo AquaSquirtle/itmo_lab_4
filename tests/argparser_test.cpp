@@ -164,19 +164,19 @@ TEST(ArgParserTestSuite, HelpStringTest) {
 
 
     ASSERT_TRUE(parser.Parse(SplitString("app --help")));
-    // Проверка закоментирована намеренно. Ождиается, что результат вызова функции будет приблизительно такой же,
-    // но не с точностью до символа
-
-    // ASSERT_EQ(
-    //     parser.HelpDescription(),
-    //     "My Parser\n"
-    //     "Some Description about program\n"
-    //     "\n"
-    //     "-i,  --input=<string>,  File path for input file [repeated, min args = 1]\n"
-    //     "-s,  --flag1,  Use some logic [default = true]\n"
-    //     "-p,  --flag2,  Use some logic\n"
-    //     "     --number=<int>,  Some Number\n"
-    //     "\n"
-    //     "-h, --help Display this help and exit\n"
-    // );
+//     Проверка закоментирована намеренно. Ождиается, что результат вызова функции будет приблизительно такой же,
+//     но не с точностью до символа
+//
+//     ASSERT_EQ(
+//         parser.HelpDescription(),
+//         "My Parser\n"
+//         "Some Description about program\n"
+//         "\n"
+//         "-i,  --input=<string>,  File path for input file [repeated, min args = 1]\n"
+//         "-s,  --flag1,  Use some logic [default = true]\n"
+//         "-p,  --flag2,  Use some logic\n"
+//         "     --number=<int>,  Some Number\n"
+//         "\n"
+//         "-h, --help Display this help and exit\n"
+//     );
 }
